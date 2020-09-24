@@ -12,6 +12,11 @@ h1 {
   font-size: 30px;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .small {
   display: block;
   margin:  15px 0;
@@ -98,6 +103,40 @@ nav ul li a{
   height: 35px;
 }
 
+/* PRODUCTS */
+.section-products {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.products-box {
+  background:#fafafa;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.products-box h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.products-box small {
+  line-height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.products-box a {
+  font-size: 13px;
+  display: block;
+  color: #0007ff;
+}
+
+.products-box img {
+  width: 50%;
+  padding-top: 10px;
+}
+
 /* HOW-WORKS */
 .how-works {
   height: 400px;
@@ -134,8 +173,12 @@ nav ul li a{
   padding-top: 10px;
 }
 
-
 /* MEDIA QUERY TABLET */
+
+/* PRODUCTS */
+  .section-products .col-md-6 {
+    padding: 0 20px;
+  }
 
 @media screen and (min-width: 768px) {
   .how-works {
