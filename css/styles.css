@@ -75,7 +75,7 @@ nav ul li a{
 /* JUMBOTRON */
 
 .jumbotron {
-  position:relative;
+  position: relative;
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -173,14 +173,51 @@ nav ul li a{
   padding-top: 10px;
 }
 
-/* MEDIA QUERY TABLET */
+/* SMART */
+.smart-mobility {
+  height: 500px;
+  background-image: url('../img/scooter-bg.jpg');
+  background-size: cover;
+  background-position: left;
+  text-align: center;
+}
 
-/* PRODUCTS */
+.smart-mobility .smart-box {
+  color:#fff;
+  margin-top: 150px;
+}
+
+.smart-mobility h3 {
+  font-size: 200%;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.smart-mobility p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+.smart-mobility a {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+
+
+
+/* MEDIA QUERY TABLET */
+@media screen and (min-width: 768px) {
+  /* PRODUCTS */
   .section-products .col-md-6 {
     padding: 0 20px;
   }
 
-@media screen and (min-width: 768px) {
   .how-works {
     margin-bottom: 310px;
   }
@@ -188,6 +225,11 @@ nav ul li a{
   .how-works .col-left,
   .how-works .col-right {
     margin-top: 500px;
+  }
+
+  /* SMART */
+  .smart-mobility p {
+    padding: 0 30px;
   }
 }
 
@@ -212,4 +254,7 @@ nav ul li a{
     max-width: 100%;
   }
 
+  .smart-mobility p {
+    padding: 0 90px;
+  }
 }
