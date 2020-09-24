@@ -1,0 +1,161 @@
+/* GENERAL STYLES */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+}
+
+/* UTILITIES */
+/* TIPOGRAPHY */
+h1 {
+  font-size: 30px;
+}
+
+.small {
+  display: block;
+  margin:  15px 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* CONTAINER SPECIFIC */
+.container {
+  width: 1350px;
+}
+
+.container-small {
+  width: 1200px;
+}
+
+.only-desktop {
+  display: none;
+}
+
+/* HEADER */
+header .container-small {
+  line-height: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+header .container-small img {
+  vertical-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:not(.languages) {
+  margin-right: 25px;
+}
+
+nav ul li.languages:not(:last-child) a{
+  line-height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+nav ul li a{
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  position:relative;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  text-align: center;
+}
+
+.jumbotron-text {
+  color: #fff;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* HOW-WORKS */
+.how-works {
+  height: 400px;
+  margin-bottom: 200px;
+  background-image: url('../img/helbiz-banner.jpg');
+  background-size: cover;
+  background-position: left center;
+}
+
+.how-works .col-left,
+.how-works .col-right {
+  margin-top: 450px;
+}
+
+.how-works .col-left {
+  text-align: right;
+}
+
+.how-works .col-left .text {
+  display: inline-block;
+  text-align: left;
+}
+
+.how-works .col-left h3 {
+  font-size: 30px;
+}
+
+.how-works h3,
+.how-works h4 {
+  font-weight: 600;
+}
+
+.how-works .col-right .text {
+  padding-top: 10px;
+}
+
+
+/* MEDIA QUERY TABLET */
+
+@media screen and (min-width: 768px) {
+  .how-works {
+    margin-bottom: 310px;
+  }
+
+  .how-works .col-left,
+  .how-works .col-right {
+    margin-top: 500px;
+  }
+}
+
+/* MEDIA QUERY PC */
+
+@media screen and (min-width: 992px) {
+  .only-desktop {
+    display: block;
+  }
+
+  .how-works {
+    background-position: center;
+  }
+
+  .how-works .phone {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .how-works .phone img {
+    max-height: 600px;
+    max-width: 100%;
+  }
+
+}
