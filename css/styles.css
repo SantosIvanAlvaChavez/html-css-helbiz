@@ -208,8 +208,53 @@ nav ul li a{
   margin-top: 15px;
 }
 
+/* APP */
+.app {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
 
+.box-left,
+.box-right {
+  height: 270px;
+  padding-top: 90px;
+}
 
+.box-left {
+  background-color: rgb(38,48,57);
+  background: linear-gradient(0deg, rgba(38,48,57,1) 0%, rgba(65,86,106,1) 100%);
+  position: relative;
+  overflow-y: hidden;
+}
+
+.box-left h3,
+.box-right h3 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.box-left p,
+.box-right p {
+  font-size: 13px;
+  line-height: 3;
+}
+
+.box-left a,
+.box-right a {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.box-left img {
+  display: none;
+}
+
+.box-right {
+  background: url('../img/cities.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 /* MEDIA QUERY TABLET */
 @media screen and (min-width: 768px) {
@@ -230,6 +275,25 @@ nav ul li a{
   /* SMART */
   .smart-mobility p {
     padding: 0 30px;
+  }
+
+  /* APP */
+  .app {
+    padding: 0 20px;
+  }
+
+  .box-left,
+  .box-right {
+    padding-top: 20px;
+  }
+
+  .box-left img {
+    display: block;
+    width: 97%;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
