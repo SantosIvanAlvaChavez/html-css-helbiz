@@ -79,7 +79,7 @@ nav ul li a{
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 400px;
   text-align: center;
 }
 
@@ -176,7 +176,7 @@ nav ul li a{
 /* SMART */
 .smart-mobility {
   height: 500px;
-  background-image: url('../img/scooter-bg.jpg');
+  background: url('../img/scooter-bg.jpg');
   background-size: cover;
   background-position: left;
   text-align: center;
@@ -256,6 +256,52 @@ nav ul li a{
   background-position: center;
 }
 
+/* FAMILY */
+.family {
+  margin: 25px 0;
+  height: 220px;
+  text-align: center;
+  background-image: url('../img/social-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.family .big-box {
+  width: 200px;
+  padding: 25px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.family h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.big-box ul.family-social {
+  padding: 20;
+}
+
+.big-box ul.family-social li {
+  display: inline-block;
+  list-style: none;
+}
+
+.big-box ul.family-social li:not(:last-child) {
+ padding-right: 15px;
+}
+
+.big-box ul.family-social li a {
+ color: #000;
+ font-size: 20px;
+ text-decoration: none;
+}
+
 /* MEDIA QUERY TABLET */
 @media screen and (min-width: 768px) {
   /* PRODUCTS */
@@ -294,6 +340,11 @@ nav ul li a{
     top: 110px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  /* FAMILY */
+  .family .big-box {
+    width: 250px;
   }
 }
 
